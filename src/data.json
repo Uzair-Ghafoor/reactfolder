@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "isTrue": true
+  },
+  {
+    "id": 4,
+    "name": "David Wilson",
+    "email": "david.wilson@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 5,
+    "name": "Eva Adams",
+    "email": "eva.adams@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 6,
+    "name": "Frank Miller",
+    "email": "frank.miller@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 7,
+    "name": "Grace Lee",
+    "email": "grace.lee@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 8,
+    "name": "Hannah Clark",
+    "email": "hannah.clark@example.com",
+    "isTrue": true
+  },
+  {
+    "id": 9,
+    "name": "Ian Thompson",
+    "email": "ian.thompson@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 10,
+    "name": "Jasmine Taylor",
+    "email": "jasmine.taylor@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 11,
+    "name": "Kevin Moore",
+    "email": "kevin.moore@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 12,
+    "name": "Laura Harris",
+    "email": "laura.harris@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 13,
+    "name": "Michael Martin",
+    "email": "michael.martin@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 14,
+    "name": "Nina White",
+    "email": "nina.white@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 15,
+    "name": "Oliver Lewis",
+    "email": "oliver.lewis@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 16,
+    "name": "Paula Robinson",
+    "email": "paula.robinson@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 17,
+    "name": "Quincy Walker",
+    "email": "quincy.walker@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 18,
+    "name": "Rita Hall",
+    "email": "rita.hall@example.com",
+    "isTrue": true
+  },
+  {
+    "id": 19,
+    "name": "Steve Allen",
+    "email": "steve.allen@example.com",
+    "isTrue": false
+  },
+  {
+    "id": 20,
+    "name": "Tina Young",
+    "isTrue": false
+  },
+  {
+    "id": 21,
+    "name": "Tina Young",
+    "email": "tina.young@example.com",
+    "isTrue": false
+  }
+]
