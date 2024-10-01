@@ -7,6 +7,7 @@ const App = () => {
       {data.map((link) => {
         return <Component {...link} key={link.id} />;
       })}
+      <div>hello</div>
     </div>
   );
 };
