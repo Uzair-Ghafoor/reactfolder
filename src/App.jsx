@@ -1,62 +1,47 @@
 import React, { useState } from 'react';
 import TextInput from './components/TextInput';
+import axios from 'axios';
 
 const App = () => {
   const [form, setForm] = useState({});
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
   const handleChange = (e) => {
     setForm({ ...form, [e.target.id]: e.target.value });
   };
-  console.log(form);
-  const handleSubmit = () => {
-    setLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      const hahah = axios.post('localhost:', form);
-      if (hahah) {
-        setLoading(false);
-      }
+      const data = await axios.post(
+        'https://localhost:3500/api/v1/auth/signup',
+        form
+      );
     } catch (error) {
-      setLoading(false);
       console.log(error);
-      setError(error);
     }
   };
-
   return (
-    <form
-      onSubmit={handleSubmit}
-      className=' flex flex-col gap-y-5 items-center justify-center bg-gray-400 h-[100vh]'
-    >
-      {loading ? (
-        <div>loading...</div>
-      ) : (
-        <div className=' w-fit h-fit bg-white p-10 rounded-lg'>
-          <TextInput
-            type={'text'}
-            placeholder={'username'}
-            onChange={handleChange}
-            id={'username'}
-          />
-          <TextInput
-            type={'email'}
-            placeholder={'email'}
-            onChange={handleChange}
-            id={'email'}
-          />
-          <TextInput
-            type={'password'}
-            placeholder={'password'}
-            onChange={handleChange}
-            id={'password'}
-          />
-          <button className=' mt-6 bg-slate-500 text-white w-full p-1 rounded-lg'>
-            Click
-          </button>
-          {error && <p>{error}</p>}
-        </div>
-      )}
-    </form>
+    <div className=' flex flex-col justify-center items-center h-[100vh] bg-slate-300'>
+      <form
+        onSubmit={handleSubmit}
+        className=' bg-white px-20 py-10 flex flex-col gap-y-8 rounded-lg'
+      >
+        <TextInput
+          id={'username'}
+          placeholder={'enter your name'}
+          onChange={handleChange}
+        />
+        <TextInput
+          id={'email'}
+          placeholder={'enter your email'}
+          onChange={handleChange}
+        />
+        <TextInput
+          id={'password'}
+          placeholder={'enter your password'}
+          onChange={handleChange}
+        />
+        <button className=' w-full bg-red-300'>click me</button>
+      </form>
+    </div>
   );
 };
 
